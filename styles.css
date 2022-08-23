@@ -1,0 +1,211 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&display=swap');
+body{
+    margin: 0px;
+    height: 100%;
+
+}
+
+.page{
+    overflow-x:hidden;
+    background: #ffffff;
+    z-index: 1;
+}
+
+.head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 5;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(236,236,236,1) 100%);
+    width: 100%;
+    z-index: 1;
+}
+
+.title{
+    color: white;
+    font-family: 'Allura', cursive;
+    font-size: 270%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 2;
+    background: #5A86AD;
+    z-index: 1;
+}
+
+.titletext{
+    height: 100%;
+    margin: 2px;
+    padding-top: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.titledesc{
+    font-size: 40%;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    height: 140%;
+    margin: 5px;
+    margin-top: -10px;
+}
+
+.border{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.slide{
+    position: absolute;
+    height: 17%;
+    width: auto;
+    z-index: 1;
+}
+
+.linkstitle{
+    color:white;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-size: 20px;
+    height: 10px;
+    margin-top: 5px;
+    color: #5A86AD;
+}
+
+.links{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    background: rgb(255, 255, 255);
+    width: 100%;
+    height:200px;
+    z-index: 1;
+}
+
+.middle{
+    text-align: center;
+    flex: 15;
+    background: rgb(255, 255, 255);
+    
+}
+
+.l{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 5px 5px 0px;
+    background-color: #5A86AD;
+    border-radius: 11px;
+    height: 75px;
+    width: 40%;
+
+    z-index: 1;
+
+}
+
+.l:hover{
+    background-color: rgba(192, 192, 192, 0.562);
+    cursor: pointer;
+    user-select: none;
+}
+
+.l:active{
+    background-color: rgba(97, 97, 97, 0.562);
+    user-select: none;
+}
+
+.l p{
+    position: relative;
+    color: white;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    width: 90px;
+}
+
+canvas{
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+
+.foot{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex: 3;
+    background: #5A86AD;
+    width: 100%;
+    z-index: 1;
+    color: white;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-size: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.mainpic-box{
+    position: relative;
+    overflow-x: none;
+}
+
+.mainpic {
+
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.rsvp{
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: #5a86ad86;
+    height: 50px;
+    width: 80px;
+    border-radius:  10px;
+    color: rgb(255, 255, 255);
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-size: 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    transition: .3s;
+}
+
+.rsvp:hover{
+    background-color: #5a86ad;
+    transition: .3s;
+    CURSOR: POINTER;
+}
+
+.rsvp p{
+    margin: 0px;
+}
+
+@media only screen and (max-width: 575px){
+    .mainpic {
+        width: 220%;
+        height: auto;
+        object-fit: cover;
+        object-position: -52vw;
+    }
+}
+
+#amazon{
+    position: relative;
+    height: 30px;
+    width: auto;
+    background-image: url("images/amazon.webp");
+}
