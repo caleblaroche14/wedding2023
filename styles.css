@@ -224,7 +224,7 @@ canvas{
 
 .imgtext{
     position: absolute;
-    bottom: 0px;
+    bottom: 4px;
     left: 50%;
     width: 100%;
     transform: translate(-50%, 0);
@@ -288,4 +288,8 @@ canvas{
     transition: 3s;
     animation-name: sailboat;
     animation-duration: 2s;
+}
+
+.desctext{
+
 }
