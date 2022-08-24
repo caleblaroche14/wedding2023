@@ -134,13 +134,16 @@ a::before{
     width: 40%;
     background-size: cover;
     z-index: 1;
-
+    opacity: .85;
+    transition: 1s;
 }
 
 .l:hover{
     background-color: rgba(192, 192, 192, 0.562);
     cursor: pointer;
     user-select: none;
+    opacity: 1;
+    transition: 0s;
 }
 
 .l:active{
@@ -214,7 +217,7 @@ canvas{
     align-items: center;
     justify-content: center;
     user-select: none;
-    transition: .3s;
+    transition: 1s;
 
     animation-name: rsvpamin;
     animation-duration: 1.6s;
@@ -251,7 +254,7 @@ canvas{
 
 .rsvp:hover{
     background-color: #5a86ad;
-    transition: .3s;
+    transition: 0s;
     CURSOR: POINTER;
 }
 
@@ -290,6 +293,25 @@ canvas{
     animation-duration: 2s;
 }
 
-.desctext{
+.bottompics{
+    display:flex;
+    flex-direction: column;
+}
 
+.bottompic{
+    width: 100%;
+    height: auto;
+
+}
+
+.bottompictext{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    background-color: #5a86adcc;
+    color: rgb(255, 255, 255);
+    font-family: 'Alegreya Sans SC', sans-serif;
+    text-align: center;
 }
