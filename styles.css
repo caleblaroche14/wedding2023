@@ -7,6 +7,18 @@ body{
 
 }
 
+a{
+    text-decoration: none;
+}
+
+a::after{
+    text-decoration: none;
+}
+
+a::before{
+    text-decoration: none;
+}
+
 .page{
     overflow-x:hidden;
     background: #ffffff;
@@ -106,7 +118,7 @@ body{
     border-radius: 11px;
     height: 75px;
     width: 40%;
-
+    background-size: cover;
     z-index: 1;
 
 }
@@ -182,6 +194,31 @@ canvas{
     justify-content: center;
     user-select: none;
     transition: .3s;
+}
+
+.imgtext{
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, 0);
+    background-color: #5a86adcc;
+    color: rgb(255, 255, 255);
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-size: 14px;
+    text-align:center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+.imgtext p{
+    margin: 0px;
+    padding: 4px;
+    max-width: 500px;
 }
 
 .rsvp:hover{
